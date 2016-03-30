@@ -1,14 +1,14 @@
 before_script:
-  - export GOPATH=$(pwd)
-  - export PATH=$GOPATH/bin:$PATH
+  - go get github.com/tools/godep
+  - GOPATH=`godep path`:$GOPATH export GOPATH
+  - PATH=$GOPATH/bin:$PATH export PATH
   - mkdir ~/.ssh && chmod 700 ~/.ssh && ssh-keyscan -H gitlab.contetto.io >> ~/.ssh/known_hosts
   - echo "$CONTETTO_DEPLOY_KEY" > ~/.ssh/id_rsa && chmod 0600 ~/.ssh/id_rsa
   - unset CONTETTO_DEPLOY_KEY
   - git config --global url."git@gitlab.contetto.io:".insteadOf "https://gitlab.contetto.io/"
-  # Temporarily allow non-secure traffic
   - git config --global url."git@gitlab.contetto.io:".insteadOf "http://gitlab.contetto.io/"
-  # Temporarily enable non-secure get's
-  - go get -v -insecure
+  - echo Start go get....
+  - go get --insecure
 
 stages:
   - build

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	proto "github.com/contetto/user-service/proto"
+	proto "gitlab.contetto.io/mindworker/user-service/proto"
 	"github.com/gorilla/mux"
 	"github.com/micro/go-micro"
 	"golang.org/x/net/context"
