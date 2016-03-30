@@ -1,0 +1,26 @@
+before_script:
+  - export GOPATH=$(pwd)
+  - export PATH=$GOPATH/bin:$PATH
+  - mkdir ~/.ssh && chmod 700 ~/.ssh && ssh-keyscan -H gitlab.contetto.io >> ~/.ssh/known_hosts
+  - echo "$CONTETTO_DEPLOY_KEY" > ~/.ssh/id_rsa && chmod 0600 ~/.ssh/id_rsa
+  - unset CONTETTO_DEPLOY_KEY
+  - git config --global url."git@gitlab.contetto.io:".insteadOf "https://gitlab.contetto.io/"
+  # Temporarily allow non-secure traffic
+  - git config --global url."git@gitlab.contetto.io:".insteadOf "http://gitlab.contetto.io/"
+  # Temporarily enable non-secure get's
+  - go get -v -insecure
+
+stages:
+  - build
+
+compile-go-1.5:
+  image: golang:1.5
+  stage: build
+  script:
+    - go build ./...
+
+compile-go-1.6:
+  image: golang:1.6
+  stage: build
+  script:
+    - go build ./...
