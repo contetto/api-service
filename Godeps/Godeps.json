@@ -1,0 +1,124 @@
+{
+	"ImportPath": "gitlab.contetto.io/mindworker/api-service",
+	"GoVersion": "go1.5",
+	"Deps": [
+		{
+			"ImportPath": "github.com/golang/protobuf/proto",
+			"Rev": "8d92cf5fc15a4382f8964b08e1f42a75c0591aa3"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "0eeaf8392f5b04950925b8a69fe70f110fa7cbfc"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/consul/api",
+			"Comment": "v0.6.4-109-gae32a3c",
+			"Rev": "ae32a3ceae9fddb431b933ed7b2a82110e41e1bf"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/consul/watch",
+			"Comment": "v0.6.4-109-gae32a3c",
+			"Rev": "ae32a3ceae9fddb431b933ed7b2a82110e41e1bf"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/go-cleanhttp",
+			"Rev": "875fb671b3ddc66f8e2f0acc33829c8cb989a38d"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/serf/coordinate",
+			"Comment": "v0.7.0-47-g598c548",
+			"Rev": "598c54895cc5a7b1a24a398d635e8c0ea0959870"
+		},
+		{
+			"ImportPath": "github.com/micro/cli",
+			"Comment": "1.2.0-190-g21dcd4a",
+			"Rev": "21dcd4adcfead0793803098c9f9427132f6498bf"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/broker",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/client",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/cmd",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/codec",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/codec/jsonrpc",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/codec/protorpc",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/errors",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/metadata",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/registry",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/selector",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/server",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/server/debug",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/server/debug/proto",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/go-micro/transport",
+			"Rev": "844979be06ff5c75c3fd6e688dd78b81ce975c54"
+		},
+		{
+			"ImportPath": "github.com/micro/misc/lib/tls",
+			"Rev": "d3acf0301548a9e3da851f1bfa0134c1b4047814"
+		},
+		{
+			"ImportPath": "github.com/pborman/uuid",
+			"Comment": "v1.0-11-gc55201b",
+			"Rev": "c55201b036063326c5b1b89ccfe45a184973d073"
+		},
+		{
+			"ImportPath": "gitlab.contetto.io/mindworker/user-service/proto",
+			"Rev": "7ec7905f2fc8db53eacbab1b0f7dd356bacd8111"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "6c89489cafabcbc76df9dbf84ebf07204673fecf"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/bson",
+			"Comment": "r2016.02.04-1-gb6e2fa3",
+			"Rev": "b6e2fa371e64216a45e61072a96d4e3859f169da"
+		}
+	]
+}
