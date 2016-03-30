@@ -1,4 +1,5 @@
 before_script:
+  - pwd
   - go get github.com/tools/godep
   - GOPATH=`godep path`:$GOPATH export GOPATH
   - PATH=$GOPATH/bin:$PATH export PATH
